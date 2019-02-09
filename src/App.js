@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+
 import './App.css';
 
 class App extends Component {
@@ -7,6 +7,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
+<<<<<<< HEAD
           <img src={logo} className="App-logo" alt="logo" />
           <p>
             huehfut <code>NGO</code> and save to reload.
@@ -19,6 +20,9 @@ class App extends Component {
           >
             Learn React
           </a>
+=======
+          
+>>>>>>> 9a5e40c8164078bcce482fa664c5682d9f20ae9f
         </header>
       </div>
     );
