@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import Appbar from './Appbar'
+
 
 class Home extends Component{
     constructor(props){
@@ -10,7 +12,7 @@ class Home extends Component{
     render(){
         return(
             <div>
-               <h1> home</h1>
+               <Appbar />
             </div>
         )
     }
