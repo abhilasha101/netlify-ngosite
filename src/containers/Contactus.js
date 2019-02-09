@@ -1,6 +1,6 @@
-import React, {component} from 'react';
+import React, {Component} from 'react';
 
-class contactus extends component{
+class Contactus extends Component{
     constructor(props){
         super(props);
 
@@ -15,3 +15,5 @@ class contactus extends component{
         )
     }
 }
+
+export default Contactus
