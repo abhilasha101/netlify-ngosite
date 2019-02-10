@@ -3,8 +3,6 @@ import React, {Component} from 'react';
 class Contactus extends Component{
     constructor(props){
         super(props);
-
-    
     }
 
     render(){
