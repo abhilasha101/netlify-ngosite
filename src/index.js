@@ -13,7 +13,7 @@ const myComponent =(
     <Router>
     <div>
         <Route exact path="/" component={Home} />
-        <Route exact path="contactus" component= {Contactus} />
+        <Route exact path="/contactus" component= {Contactus} />
         </div>
     </Router>
 )
