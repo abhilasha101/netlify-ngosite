@@ -1,7 +1,7 @@
 .bgimag{
-    background-image: url("images/bac.jpg"); /* The image used */
+    background-image: url("images/background2.jpg"); /* The image used */
     
-  min-height: 600px;/* You must set a specified height */
+  height: 100vh;/* You must set a specified height */
   
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */

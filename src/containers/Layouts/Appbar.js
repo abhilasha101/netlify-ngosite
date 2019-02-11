@@ -4,6 +4,7 @@ import { withStyles } from '@material-ui/core/styles';
 import {AppBar,Toolbar,Typography,Button,IconButton} from '@material-ui/core';
 
 import MenuIcon from '@material-ui/icons/Menu';
+import {Link } from "react-router-dom";
 
 const styles = {
   root: {
@@ -17,8 +18,13 @@ const styles = {
     marginRight: 20,
   },
   section:{
-    backgroundColor:" #ff5252",
+    backgroundColor:"#0d47a1",
     
+  },
+  button:{
+    backgroundColor:"#0d47a1",
+    color:"white"
+
   }
 };
 
@@ -34,7 +40,7 @@ function ButtonAppBar(props) {
           <Typography variant="h6" color="inherit" className={classes.grow}>
             NGOIndia
           </Typography>
-          <Button color="inherit">Contactus</Button>
+          <Button className={classes.button}><Link to="/Contactus">Contactus </Link></Button>
         </Toolbar>
       </AppBar>
     </div>
