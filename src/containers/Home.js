@@ -8,6 +8,7 @@ import red from '@material-ui/core/colors/red';
 import '../Style.css';
 import Grid from './Layouts/Grid';
 import Button from '@material-ui/core/Button';
+import Header from './Header'
 
 const Styles={
     section1:{
@@ -37,7 +38,7 @@ class Home extends Component{
     render(){
         return(
             <div>
-               <Appbar />
+                <Header />
                <div>
                <Particle />
                </div>
