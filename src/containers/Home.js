@@ -39,17 +39,13 @@ class Home extends Component{
         return(
             <div>
                 <Header />
-               <div>
-               <Particle />
-               </div>
+              
                
                <div className="bgimag">
-               <Typography variant="display2" style={Styles.section1} >
-            GIVE A HELPING HAND TO THOSE WHO NEED IT 
-          </Typography>
-          <Button  style={Styles.root}variant="contained" size="large">DONATE </Button>
+               
+          
                </div>
-               <Grid />
+               
 
                <Tabs />
             </div>
