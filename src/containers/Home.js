@@ -8,6 +8,7 @@ import red from '@material-ui/core/colors/red';
 import '../Style.css';
 import Grid from './Layouts/Grid';
 import Button from '@material-ui/core/Button';
+import Header from './Header'
 
 const Styles={
     section1:{
@@ -38,6 +39,7 @@ class Home extends Component{
     render(){
         return(
             <div>
+<<<<<<< HEAD
                <Appbar />
                <div>
                
@@ -48,8 +50,16 @@ class Home extends Component{
             GIVE A HELPING HAND TO THOSE WHO NEED IT 
           </Typography>
           <Button  style={Styles.root}variant="contained" size="large">DONATE </Button>
+=======
+                <Header />
+              
+               
+               <div className="bgimag">
+               
+          
+>>>>>>> e8342a9e1ec1d484b8f789cb6040ec8a08bda2ff
                </div>
-               <Grid />
+               
 
                <Tabs />
             </div>

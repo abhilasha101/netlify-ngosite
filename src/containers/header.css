@@ -1,0 +1,115 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+nav {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 18vh;
+    background-color: #eeeeee;
+    font-family: 'Poppins', sans-serif;
+    position: fixed;
+    width: 100%;
+}
+
+.logo {
+    color: rgb(8, 8, 8);
+    text-transform: uppercase;
+    letter-spacing:  5px;
+    font-size: 20px;
+    padding-left: 2 0px;
+    margin-left: 60px;    
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+.nav-links {
+    list-style: none;
+}
+
+.nav-links a {
+    color: rgb(8, 8, 8);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.nav-links :hover{
+    color: palevioletred
+}
+
+.burger {
+    display: none;
+}
+
+.burger div{
+    height:3px;
+    width: 20px;
+    background-color:  rgb(8, 8, 8);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width:1024px){
+    .nav-links {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:768px){
+    body{
+        overflow-x:hidden;
+    }
+    nav {
+        justify-content: space-around;
+        min-height: 10vh;
+    }
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: #ffffffd7;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 45%;
+        transform: translatex(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+    .hidden {
+        display: none
+    }
+    .logo {
+        margin-left: 20px;
+    }
+}
+
+.nav-active{
+    transform: translateX(0%);
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+
+.toggle .line2{
+    opacity: 0;
+}
