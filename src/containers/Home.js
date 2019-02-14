@@ -15,6 +15,7 @@ const Styles={
       justify:"center",
       textAlign:"center",
       
+      
     },
     root:{
         backgroundColor:"#0d47a1",
@@ -39,11 +40,11 @@ class Home extends Component{
             <div>
                <Appbar />
                <div>
-               <Particle />
+               
                </div>
                
                <div className="bgimag">
-               <Typography variant="display2" style={Styles.section1} >
+               <Typography variant="display2" style={Styles.section1}  >
             GIVE A HELPING HAND TO THOSE WHO NEED IT 
           </Typography>
           <Button  style={Styles.root}variant="contained" size="large">DONATE </Button>
