@@ -1,14 +1,8 @@
 .bgimag{
-<<<<<<< HEAD
-    background-image: url('./containers/images/background2.jpg'); /* The image used */
-    
-  height: 700px;/* You must set a specified height */
-=======
     background-image: url("./containers/images/dog-wallpaper-14.jpg"); /* The image used */
 
     
-  height: 90vh;/* You must set a specified height */
->>>>>>> e8342a9e1ec1d484b8f789cb6040ec8a08bda2ff
+  height: 100vh;/* You must set a specified height */
   
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */

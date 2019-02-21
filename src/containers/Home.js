@@ -39,25 +39,12 @@ class Home extends Component{
     render(){
         return(
             <div>
-<<<<<<< HEAD
-               <Appbar />
-               <div>
-               
-               </div>
-               
-               <div className="bgimag">
-               <Typography variant="display2" style={Styles.section1}  >
-            GIVE A HELPING HAND TO THOSE WHO NEED IT 
-          </Typography>
-          <Button  style={Styles.root}variant="contained" size="large">DONATE </Button>
-=======
                 <Header />
               
                
                <div className="bgimag">
                
           
->>>>>>> e8342a9e1ec1d484b8f789cb6040ec8a08bda2ff
                </div>
                
 
