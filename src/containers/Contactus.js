@@ -11,7 +11,7 @@ import InputLabel from '@material-ui/core/InputLabel'
 import Input from '@material-ui/core/Input'
 import Button from '@material-ui/core/Button'
 import TextField from '@material-ui/core/TextField'
-import Header from './Header'
+
 
 
 const styles = theme => ({
@@ -41,9 +41,9 @@ var sectionStyle = {
     overflow:'hidden',
     width: "100%",
     height: "100vh",
-    backgroundColor: '#a29696',
+    backgroundColor: '#1a237e',
 
-    backgroundImage: 'linear-gradient(0deg,#a29696 0%, #323632 80%)'
+    backgroundImage: 'linear-gradient(#1a237e,#303f9f,#3f51b5,#5c6bc0,#2196f3,#90caf9)'
   }
 
 const div1 = {
@@ -51,7 +51,7 @@ const div1 = {
   backgroundColor: 'white',
   border: '0px solid #ff6550',
   borderRadius: '15px 15px 15px 15px',
-  boxShadow: '4px 2px 16px 4px rgba(138,134,134,0.75)',
+  boxShadow: '4px 4px 16px 0px rgba(41,43,145,0.75)',
   width: '45%',
   marginLeft: 50,
   paddingTop: 20,
@@ -68,9 +68,8 @@ class Contactus extends Component{
     render(){
         return(
              <section style={ sectionStyle }>
-               <Header />
-                <Grid container spacing={24} style={{paddingTop:50}}>
-                    <Grid item xs={12} lg={6} >
+                <Grid container spacing={24}>
+                    <Grid item xs={6}>
                       <div style={{padding:100}}>
                         <Typography variant="h4" style={{color:'white',fontWeight:800}}gutterBottom>
                           Contact Us
@@ -80,7 +79,7 @@ class Contactus extends Component{
                         </Typography>
                       </div>   
                     </Grid>
-                    <Grid item xs={12} lg={6}>
+                    <Grid item xs={6}>
                       <div >
                         <div style={div1}>
                         <form className={styles.form}>

@@ -13,25 +13,27 @@ import color from '@material-ui/core/colors';
 
 const styles = {
   card: {
-    maxWidth: 345,
+    maxWidth: 300,
   },
   media: {
-    height: 140,
+    height: 200,
   },
   section:{
-    backgroundColor:"#0d47a1",
+    backgroundColor:"",
     color:"white"
   }
 };
 
 function MediaCard(props) {
   const { classes } = props;
+  { console.log(props.img,"gdgc")}
   return (
     <Card className={classes.card}>
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image="../images/youth.jpg"
+          image=  {props.img}
+        
           title="Contemplative Reptile"
         />
         <CardContent>
@@ -40,13 +42,13 @@ function MediaCard(props) {
           </Typography>
           <Typography component="p">
             Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-            across all continents except Antarctica
+            across all continents except Antarctica 
           </Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button className={classes.section} variant="contained"size="small" >
-          Learn More
+        <Button className={classes.section} color="primary" variant="contained"size="small" >
+          Learn More 
         </Button>
        
       </CardActions>
