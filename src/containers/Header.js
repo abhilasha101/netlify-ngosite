@@ -21,7 +21,7 @@ class Header extends Component{
             <div>
                 <nav>
                     <div className="logo">
-                        <h4>logo</h4>
+                        <Link to="/" style={{textDecoration:'none'}}>Logo</Link>
                     </div>
                     <ul className="nav-links" style={{alignItems:'center'}}>
                         <li><Link to="/">Home</Link></li>

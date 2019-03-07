@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
+import firebase from 'firebase'
 
+import fire from '../fire'
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
@@ -33,13 +35,13 @@ const styles = theme => ({
   textField: {
     marginLeft: theme.spacing.unit,
     marginRight: theme.spacing.unit,
-    background: 'white'
+    backgroundColor: 'white'
   },
 });
 
 var sectionStyle = {
-    overflow:'hidden',
-    width: "100%",
+    overflowX: 'hidden',
+    minWidth: "100%",
     height: "100vh",
     backgroundColor: '#1a237e',
 
@@ -51,8 +53,10 @@ const div1 = {
   backgroundColor: 'white',
   border: '0px solid #ff6550',
   borderRadius: '15px 15px 15px 15px',
-  boxShadow: '4px 4px 16px 0px rgba(41,43,145,0.75)',
-  width: '45%',
+  boxShadow: '4px 2px 16px 4px rgba(138,134,134,0.75)',
+  minWidth: '60px',
+  maxWidth: '350px',
+  
   marginLeft: 50,
   paddingTop: 20,
   paddingBottom: 20,
@@ -63,13 +67,59 @@ const div1 = {
 class Contactus extends Component{
     constructor(props){
         super(props);
+        this.state= {
+          name: "",
+          email: "",
+          query: "",
+
+        }
     }
+    handleChangeName = (e)=>{
+        // console.log("name changing",e.target.value)
+        let name = e.target.value
+        this.setState({name})
+    }
+    handleChangeEmail = (e)=>{
+        // console.log("email changing")
+        let email = e.target.value
+        this.setState({email})
+    }
+    handleChangeQuery = (e)=>{
+        // console.log("query changing")
+        let query = e.target.value
+        this.setState({query})
+    }
+
+
+    handleClickSubmit = (e)=>{
+      let name = this.state.name
+      let email = this.state.email
+      let query = this.state.query
+
+      e.preventDefault()
+      console.log("clicked")
+      var db = fire.firestore();
+      db.collection("users").add({
+        name,
+        email,
+        query
+
+    })
+    .then(function(docRef) {
+        console.log("Document written with ID: ", docRef.id);
+    })
+    .catch(function(error) {
+        console.error("Error adding document: ", error);
+    });
+    }
+
 
     render(){
         return(
              <section style={ sectionStyle }>
-                <Grid container spacing={24}>
-                    <Grid item xs={6}>
+               <Header />
+                <Grid container spacing={24} style={{paddingTop:50}}>
+                    <Grid item xs={12} lg={6} sm={12} md={6}>
                       <div style={{padding:100}}>
                         <Typography variant="h4" style={{color:'white',fontWeight:800}}gutterBottom>
                           Contact Us
@@ -79,27 +129,40 @@ class Contactus extends Component{
                         </Typography>
                       </div>   
                     </Grid>
-                    <Grid item xs={6}>
+                    <Grid item xs={12} lg={6}sm={12} md={6}>
                       <div >
                         <div style={div1}>
-                        <form className={styles.form}>
+                        <form onSubmit={e=>{this.handleClickSubmit(e)}} className={styles.form}>
                           <FormControl margin="normal" required fullWidth>
                             <InputLabel htmlFor="name">name</InputLabel>
-                            <Input id="email" name="name"  autoFocus />
+                            <Input 
+                              id="email"
+                              name="name"  
+                              onChange={e=>{this.handleChangeName(e)}}
+                              autoFocus 
+                              />
                           </FormControl>
                           <FormControl margin="normal" required fullWidth>
                             <InputLabel htmlFor="email">Email Address</InputLabel>
-                            <Input id="email" name="email" autoComplete="email" autoFocus />
+                            <Input 
+                              id="email" 
+                              name="email" 
+                              autoComplete="email" 
+                              type="email" 
+                              onChange={e=>{this.handleChangeEmail(e)}}
+                              autoFocus />
                           </FormControl>
                           <TextField
                             id="filled-multiline-static"
                             label="Query"
                             multiline
-                            rows="4"
+                            rows="5"
                             defaultValue=""
                             className={styles.textField}
                             margin="normal"
-                            variant="filled"
+                            variant="outlined"
+                            required={true}
+                            onChange={e=>{this.handleChangeQuery(e)}}
                           />
                           
                           <Button
@@ -108,6 +171,7 @@ class Contactus extends Component{
                             variant="contained"
                             color="primary"
                             className={styles.submit}
+                            
                           >
                             Submit
                           </Button>
