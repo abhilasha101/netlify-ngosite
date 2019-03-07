@@ -2,11 +2,7 @@
     background-image: url("./containers/images/dog-wallpaper-14.jpg"); /* The image used */
 
     
-<<<<<<< HEAD
-  height: 90vh;/* You must set a specified height */
-=======
   height: 100vh;/* You must set a specified height */
->>>>>>> dd28c51182fac66fc0c01a5f422d4f4ae1b66685
   
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
