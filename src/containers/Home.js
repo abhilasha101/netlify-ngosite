@@ -88,7 +88,7 @@ class Home extends Component{
                <div  >
                     <Grid  container spacing={24}  style={Styles.section1}>              
                    <Grid item xs={12}> <Typography variant="h4"> our major causes</Typography>
-                   <p> lorem jkhnireb hieurhiuer ierbfuefh iuehrguierbgue hbhuebruie
+                   <p> my name is abhilasha malhotra
 
                    </p>
                     </Grid>
