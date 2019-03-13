@@ -16,11 +16,13 @@ import img3 from './images/d3.jpg';
 import Footer from './Footer';
 import Cards from "./Layouts/Cards";
 
+
 import { unstable_Box as Box } from '@material-ui/core/Box';
+import Divhover from './Layouts/Divhover';
 
 const Styles={
     section1:{
-        padding:"60px",
+        padding:"100px",
       
       justify:"center",
       textAlign:"center",
@@ -80,9 +82,17 @@ class Home extends Component{
                
           
                </div>
+               <div>
+                   <Divhover />
+                   </div>
                <div  >
                     <Grid  container spacing={24}  style={Styles.section1}>              
-                   <Grid item xs={12}> <Typography variant="h4"> our major causes</Typography> </Grid>
+                   <Grid item xs={12}> <Typography variant="h4"> our major causes</Typography>
+                   <p> lorem jkhnireb hieurhiuer ierbfuefh iuehrguierbgue hbhuebruie
+
+                   </p>
+                    </Grid>
+                   
                    </Grid> 
                </div>
               
@@ -95,7 +105,7 @@ class Home extends Component{
                 </div>
                 <div  >
                     <Grid container spacing={24} align="center"> 
-                    <Grid xs item={12}> <h1 style={{marginTop:50}}> Support a Campaign or A fundraiser</h1>
+                    <Grid xs item={12} style={{padding:100}}> <h1 style={{marginTop:50}}> Support a Campaign or A fundraiser</h1>
                      <p style={Styles.section2}> The French Revolution constituted for the conscience of the dominant aristocratic class a </p>
                       <p style={Styles.section2}> fall from innocence the natural chain of events. </p>
 

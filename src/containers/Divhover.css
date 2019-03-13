@@ -1,0 +1,35 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+
+.container{
+    width: 90%;
+    padding:20px;
+    margin:100px auto;
+    display: flex;
+    background: white;
+    
+
+}
+
+.box{
+    height: 400px;
+    
+    padding:20px;
+    background:white;
+    border:1px solid #e0e0e0;
+
+
+    justify-self: center;
+    flex: 1;
+    transition: 1s;
+
+}
+
+.box:hover{
+    flex:3;
+    background:#e0e0e0;
+}
