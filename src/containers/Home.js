@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import Tabs from './Layouts/Tabs'
+
 import Gridlist from './Layouts/Gridlist';
 import  Typography from '@material-ui/core/Typography'
 
@@ -14,6 +14,7 @@ import img1 from './images/d1.jpg';
 import img2 from './images/d2.jpg';
 import img3 from './images/d3.jpg';
 import Footer from './Footer';
+import Cards from "./Layouts/Cards";
 
 import { unstable_Box as Box } from '@material-ui/core/Box';
 
@@ -35,6 +36,12 @@ const Styles={
     container:{
         justify:"center",
         marginLeft:"100px"
+    },
+    section2:{
+        color:"grey",
+
+        marginBottom:"10px",
+        marginTop:"10px"
     }
 }
 
@@ -65,12 +72,11 @@ class Home extends Component{
                
                
                
-               <div className="bgimag">
-              
-                <Header />
+               
               
                
                <div className="bgimag">
+               <Header />
                
           
                </div>
@@ -78,22 +84,49 @@ class Home extends Component{
                     <Grid  container spacing={24}  style={Styles.section1}>              
                    <Grid item xs={12}> <Typography variant="h4"> our major causes</Typography> </Grid>
                    </Grid> 
-             </div>
-             
+               </div>
+              
                 <div>
-                <Grid container spacing={24}  style={Styles.container}>
-                 <Grid item xs={4} style={{padding:0}}> <Window img={img1}/></Grid>
-                 <Grid item xs={4} style={{padding:0}}> <Window img={img2}/></Grid>
-                 <Grid item xs={4} style={{padding:0}}> <Window img={img3}/></Grid>
-                
-                
-
-                </Grid>
+                    <Grid container spacing={24}> 
+                    <Grid item xs={4}  align="center" style={{marginBottom:30}}> <Window  img={img1}/> </Grid>
+                    <Grid item xs={4}   align="center"> <Window  img={img2}/> </Grid>
+                    <Grid item xs={4}   align="center"> <Window  img={img3}/> </Grid>
+                    </Grid>
                 </div>
+                <div  >
+                    <Grid container spacing={24} align="center"> 
+                    <Grid xs item={12}> <h1 style={{marginTop:50}}> Support a Campaign or A fundraiser</h1>
+                     <p style={Styles.section2}> The French Revolution constituted for the conscience of the dominant aristocratic class a </p>
+                      <p style={Styles.section2}> fall from innocence the natural chain of events. </p>
 
+                     </Grid>
+
+                    </Grid>
+
+
+                    <Grid container spacing={24} style={{marginTop:100}}>
+                    <Grid item xs={6} align="right"> <Cards /> </Grid>
+                    <Grid item xs={6}  align="left"> <Cards /> </Grid>
+                    </Grid>
+
+                     <Grid container spacing={24}>
+                    <Grid item xs={6} align="right"> <Cards /> </Grid>
+                    <Grid item xs={6}  align="left"> <Cards /> </Grid>
+                    </Grid>
+                    
+                    <Grid container spacing={24}  style={{marginBottom:100}}>
+                    <Grid item xs={6} align="right" > <Cards /> </Grid>
+                    <Grid item xs={6}  align="left"> <Cards /> </Grid>
+                    </Grid>
+                    
+
+                </div>
+               
+               <div>
                <Footer />
+               </div>
             </div>
-            </div>
+            
             
         )
     }
