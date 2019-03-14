@@ -81,13 +81,7 @@ class Footer extends Component{
     render(){
         return(
           <div>  
-              <Grid container spacing ={24}>
-              <Grid item xs={12} style={Styles.section4}> <h1> Expierence How your Donation Can Reach </h1>
-              <p style={Styles.section3}> he French Revolution constituted for the conscience of the dominant aristocratic class a fall from innocence, and upturning of the natural chain of events that resounded.</p>
-               <div className="links"><Button variant="contained" style={Styles.section5}> make donation </Button> 
-               <Button variant="contained" style={Styles.section5}> create fundraising  </Button> </div> </Grid>
-               
-               </Grid>
+            
            <div>
                  <Grid container spacing={24} style={Styles.section1} > 
                  <Grid item xs={4} style={Styles.section2} > <h3 style={{marginBottom:"10px"}}>About us</h3> 

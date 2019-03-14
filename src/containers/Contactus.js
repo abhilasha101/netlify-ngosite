@@ -59,10 +59,10 @@ const div1 = {
   maxWidth: '350px',
   
   marginLeft: 50,
-  paddingTop: 20,
-  paddingBottom: 20,
-  paddingLeft:50,
-  paddingRight: 50, 
+  paddingTop: 40,
+  paddingBottom: 40,
+  paddingLeft:60,
+  paddingRight: 60, 
 }
 
 class Contactus extends Component{
@@ -121,7 +121,7 @@ class Contactus extends Component{
                <Header />
                 <Grid container spacing={24} style={{paddingTop:50}}>
                     <Grid item xs={12} lg={6} sm={12} md={6}>
-                      <div style={{padding:100}}>
+                      <div style={{padding:200}}>
                         <Typography variant="h4" style={{color:'white',fontWeight:800}}gutterBottom>
                           Contact Us
                         </Typography>

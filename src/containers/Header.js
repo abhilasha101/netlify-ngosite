@@ -26,7 +26,7 @@ class Header extends Component{
                     <ul className="nav-links" style={{alignItems:'center'}}>
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/aboutus">About</Link></li>
-                        <li><a href="#">Work</a></li>
+                        <li><Link to="/joinus">Join us</Link></li>
                         <li><a href="#">Project</a></li>
                         <li><Link to="/contactus">Contact Us</Link></li>
                         <div>

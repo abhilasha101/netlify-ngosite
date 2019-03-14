@@ -7,6 +7,7 @@ import * as serviceWorker from './serviceWorker';
 import Contactus from "./containers/Contactus"
 import Home from "./containers/Home"
 import Aboutus from "./containers/Aboutus";
+import Joinus from "./containers/Joinus";
 
 import {BrowserRouter as Router, Route } from 'react-router-dom'
 
@@ -16,6 +17,7 @@ const myComponent =(
         <Route exact path="/" component={Home} />
         <Route exact path="/contactus" component= {Contactus} />
         <Route exact path="/aboutus" component ={Aboutus} />
+        <Route exact path="/joinus" component={Joinus} />
         </div>
     </Router>
 )

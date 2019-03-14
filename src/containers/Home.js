@@ -19,6 +19,7 @@ import Cards from "./Layouts/Cards";
 
 import { unstable_Box as Box } from '@material-ui/core/Box';
 import Divhover from './Layouts/Divhover';
+import Reach from './Reach'
 
 const Styles={
     section1:{
@@ -88,7 +89,7 @@ class Home extends Component{
                <div  >
                     <Grid  container spacing={24}  style={Styles.section1}>              
                    <Grid item xs={12}> <Typography variant="h4"> our major causes</Typography>
-                   <p> my name is abhilasha malhotra
+                   <p> hif hdhu jishui hduhruh uiiffiuvguif uiihsduih
 
                    </p>
                     </Grid>
@@ -133,6 +134,7 @@ class Home extends Component{
                 </div>
                
                <div>
+                   <Reach />
                <Footer />
                </div>
             </div>
