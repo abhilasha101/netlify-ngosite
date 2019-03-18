@@ -12,7 +12,7 @@ const styles = theme => ({
     paddingBottom: theme.spacing.unit * 2,
   },
   section:{
-      width:"500px",
+      width:"450px",
       height:"100px",
 
       marginLeft:"50px",

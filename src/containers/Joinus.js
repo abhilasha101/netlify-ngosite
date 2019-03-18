@@ -34,7 +34,15 @@ const div1 = {
   marginTop: '100px',
  
   minWidth: '60px',
-  maxWidth: '350px',
+  maxWidth: '900px',
+
+
+  backgroundColor: 'white',
+  border: '0px solid #ff6550',
+  borderRadius: '15px 15px 15px 15px',
+  boxShadow: '4px 2px 16px 4px rgba(138,134,134,0.75)',
+  
+  
   
   marginLeft: 50,
   paddingTop: 40,
@@ -83,7 +91,7 @@ const section={
                     
                          
                     </Grid >
-                    <Paper elevation={13} style={section}>
+                    
                        
                     <Grid item xs={12} lg={6}sm={12} md={6}>
                       <div >
@@ -208,7 +216,7 @@ const section={
                           </div>
                          
                          </Grid>
-                         </Paper>
+                        
                      </div>
 
                      

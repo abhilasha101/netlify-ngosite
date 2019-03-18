@@ -12,8 +12,8 @@ const Styles={
         height:"500px",
         width:"1600px",
         padding:"50px",
-        marginTop:50,
-        marginBottom:50,
+        marginTop:250,
+        marginBottom:100,
         marginLeft:30
     },
     image :{
@@ -29,7 +29,30 @@ const Styles={
 
         
 
-    }
+    },
+
+    
+ div1 : {
+    marginTop: '250px',
+    marginBottom:"100px",
+   
+    minWidth: '60px',
+    maxWidth: '900px',
+  
+  
+    backgroundColor: 'white',
+    border: '0px solid #ff6550',
+    borderRadius: '15px 15px 15px 15px',
+    boxShadow: '4px 2px 16px 4px rgba(138,134,134,0.75)',
+    
+    
+    
+    marginLeft: 50,
+    paddingTop: 40,
+    paddingBottom: 40,
+    paddingLeft:60,
+    paddingRight: 60, 
+  }
 }
 
 
@@ -47,10 +70,10 @@ class Aboutus extends Component{
                 <Header />
                 <div>
                      <Grid container spacing={24} >
-                    <Grid item xs={12}  lg={6} sm={12} md={6}>   <img src ={img6 } style={Styles.image}/></Grid>
-                     </Grid>
+                    <Grid item xs={12}  lg={6} sm={12} md={6}>  
+                     
                     
-                     <Paper elevation={12} style={Styles.section}>
+                     <div style={Styles.div1}>
                      <h1  style={{padding:30}}> About Us </h1>
                      
                     
@@ -63,7 +86,9 @@ class Aboutus extends Component{
                              the release of Letraset sheets containing Lorem Ipsum passages, and more recently 
                              with desktop publishing software like Aldus PageMaker including versions of Lorem
                               Ipsum </p>
-                     </Paper>
+                     </div>
+                     </Grid>
+                     </Grid>
                       
 
                     </div>

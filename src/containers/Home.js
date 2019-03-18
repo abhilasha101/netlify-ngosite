@@ -116,18 +116,18 @@ class Home extends Component{
 
 
                     <Grid container spacing={24} style={{marginTop:100}}>
-                    <Grid item xs={6} align="right"> <Cards /> </Grid>
-                    <Grid item xs={6}  align="left"> <Cards /> </Grid>
+                    <Grid item xs={12} lg={6} sm={12} md={6} align="right"> <Cards /> </Grid>
+                    <Grid item xs={12} lg={6} sm={12} md={6} align="left"> <Cards /> </Grid>
                     </Grid>
 
                      <Grid container spacing={24}>
-                    <Grid item xs={6} align="right"> <Cards /> </Grid>
-                    <Grid item xs={6}  align="left"> <Cards /> </Grid>
+                    <Grid item xs={12} lg={6} sm={12} md={6} align="right"> <Cards /> </Grid>
+                    <Grid item xs={12} lg={6} sm={12} md={6}  align="left"> <Cards /> </Grid>
                     </Grid>
                     
                     <Grid container spacing={24}  style={{marginBottom:100}}>
-                    <Grid item xs={6} align="right" > <Cards /> </Grid>
-                    <Grid item xs={6}  align="left"> <Cards /> </Grid>
+                    <Grid item xs={12}  lg={6} sm={12} md={6}align="right" > <Cards /> </Grid>
+                    <Grid item xs={12} lg={6} sm={12} md={6} align="left"> <Cards /> </Grid>
                     </Grid>
                     
 
