@@ -99,9 +99,9 @@ class Home extends Component{
               
                 <div>
                     <Grid container spacing={24}> 
-                    <Grid item xs={4}  align="center" style={{marginBottom:30}}> <Window  img={img1}/> </Grid>
-                    <Grid item xs={4}   align="center"> <Window  img={img2}/> </Grid>
-                    <Grid item xs={4}   align="center"> <Window  img={img3}/> </Grid>
+                    <Grid item xs={12} lg={4} sm={12} md={4} align="center" style={{marginBottom:30}}> <Window  img={img1}/> </Grid>
+                    <Grid item xs={12} lg={4} sm={12} md={4}  align="center"> <Window  img={img2}/> </Grid>
+                    <Grid item xs={12} lg={4} sm={12} md={4}  align="center"> <Window  img={img3}/> </Grid>
                     </Grid>
                 </div>
                 <div  >
