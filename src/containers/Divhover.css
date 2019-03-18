@@ -4,15 +4,17 @@
     box-sizing: border-box;
 
 }
-
+@media(min-width:468px){
 .container{
     width: 70%;
     padding:20px;
     margin:100px auto;
     display: flex;
     background: white;
-    flex-wrap: wrap;
     
+    
+
+}
 
 }
 
